@@ -91,3 +91,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</pre>
 
+h3. バージョン履歴
+
+2011/04/05 Ver.1.3 サーバ一覧表示時に、鯖のどこが落ちてるか分かりやすくした
+                   (色制御コードの増加のため3行にわたって表示するように)
+2011/03/12 Ver.1.2 コマンドが間違っているときに有効かどうかチェックするようにした
+2011/03/09 Ver.1.1 表示形式変更、Array#include を使うように修正
+2011/03/07 Ver.1.0
+
