@@ -11,9 +11,7 @@ Limechat for Windows version 2.16(くらい) から JScript による javascript
 h3. インストール方法
 
 # ”Limechatメニュー → 設定 → スクリプトの設定 → スクリプトフォルダを開く”で、スクリプトの保存ディレクトリを開きましょう。（XPまではインストールディレクトリ直下、Windows7ではホームディレクトリの方と場所が違うので注意）
-
 # rosv.js をコピーします。
-
 # 「スクリプトの設定」ダイアログが開いていると思うので、ファイル名一覧から rosv.js の行の、プロファイル名の列のところで右クリックしてスクリプトを有効にします。
 
 
@@ -21,7 +19,7 @@ h3. 使い方
 
 rosv を有効にしたいチャンネルに移動し、
 
-<pre>rosv>boot<pre>
+<pre>rosv>boot</pre>
 
 と発言しましょう。rosv がそのチャンネルで有効になります。
 この段階で各種コマンドを使うことが出来るようになります。
@@ -59,7 +57,7 @@ h4. rosv>start>サーバ名
 サーバがダウンしたり、オープンした時に自動で状態を知らせます。
 *管理者権限が必要です。*
 
-bq. ex.
+bq. 出力例
 (username) [Rosv] サーバが Open しました [ Iris, Thor ]
 
 h4. rosv>stop>サーバ名
@@ -71,7 +69,7 @@ h3. ライセンス
 
 MITライセンスで公開します。
 
-The MIT License
+<pre>The MIT License
 
 Copyright (c) 2011 whiteleaf
 
@@ -91,5 +89,5 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+THE SOFTWARE.</pre>
 
