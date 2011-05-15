@@ -1,0 +1,87 @@
+
+h1. RO Server Checker for Limechat
+Copyright (C) 2011 whiteleaf
+
+h2. RO のサーバーステータスを監視する Limechat 用のスクリプトです。
+
+Limechat for Windows version 2.16(くらい) から JScript による javacript の実行をサポートしました。
+なので Limechat のバージョンは 2.16 以上を必須とします。
+
+h3. インストール方法
+”Limechatメニュー → 設定 → スクリプトの設定 → スクリプトフォルダを開く”
+で、スクリプトの保存ディレクトリを開きましょう。（XPまではインストールディレクトリ直下、
+Windows7ではホームディレクトリの方と場所が違うので注意）
+
+rosv.js をコピーします。
+
+「スクリプトの設定」ダイアログが開いていると思うので、ファイル名一覧から
+rosv.js の行の、プロファイル名の列のところで右クリックしてスクリプトを有効にします。
+
+
+h3. 使い方
+rosv を有効にしたいチャンネルに移動し、
+
+<pre>rosv>boot<pre>
+
+と発言しましょう。rosv がそのチャンネルで有効になります。
+この段階で各種コマンドを使うことが出来るようになります。
+
+<pre>rosv>help</pre>
+
+コマンド一覧はヘルプコマンドで出すことが出来ます。
+（一部のコマンドは管理者権限（つまり実行したユーザ）のみが実行することが出来ます。）
+
+h3. 各種コマンド
+h4. rosv
+全サーバの状態を確認出来ます。
+管理者権限がなくても実行出来ます。
+
+h4. rosv>サーバ名
+指定したサーバの詳細な状態を確認出来ます。
+管理者権限がなくても実行出来ます。
+
+h4. rosv>boot
+そのチャンネルで rosv を有効にします。
+*管理者権限が必要です。*
+
+h4. rosv>kill
+そのチャンネルで rosv を無効にします。
+*管理者権限が必要です。*
+
+h4. rosv>start>サーバ名
+そのチャンネルで指定したサーバの監視を始めます。
+サーバがダウンしたり、オープンした時に自動で状態を知らせます。
+*管理者権限が必要です。*
+
+_ex._
+_(username) [Rosv] サーバが Open しました [ Iris, Thor ]_
+
+h4. rosv>stop>サーバ名
+そのチャンネルで指定したサーバの監視を終了します。
+*管理者権限が必要です。*
+
+h3. ライセンス
+MITライセンスで公開します。
+
+The MIT License
+
+Copyright (c) <year> <copyright holders>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
