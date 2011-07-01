@@ -276,7 +276,7 @@ Rosv.Command = Class.create({
       this.console.information("有効なサーバ名ではありません");
       return;
     }
-    result = [];
+    var result = [];
     for (var sub_server in this.checker.status.detail[server]) {
       result.push("<color white," + (this.checker.status.detail[server][sub_server] == "open" ? "green> " : "red> ") +
                   sub_server + " <stop>");
